@@ -34,7 +34,7 @@ The major hardware components of our device are listed in the table of component
 
 ## Pictures
 This is our full device, including the arm band with vibromotor and sleep mask with ECG and light panel:
-!(images/device.JPG)
+![device](images/device.JPG)
 
 Close-up of arm band with vibromotor:
 !(images/armband.JPG)
