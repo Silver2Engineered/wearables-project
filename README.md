@@ -17,7 +17,7 @@ This device would allow people with sleep paralysis to get better sleep by assur
 ## Block Diagram and Visual Summary
 A person wears the Waker device, which includes an eye mask and arm band. There is an electrode attached to their eye mask which senses blinking. When they blink three times in three seconds, the LED panel in the eye mask turns on as well as a vibromotor that is embedded in the arm band.
 
-![blockdiagram] (images/blockdiagram.JPG)
+![blockdiagram](images/blockdiagram.JPG)
 ![diagram1](images/diagram1.JPG)
 ![diagram2](images/diagram2.JPG)
 
