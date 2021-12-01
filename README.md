@@ -21,16 +21,17 @@ A person wears the Waker device, which includes an eye mask and arm band. There 
 ![diagram2](images/diagram2.JPG)
 
 ## Components
-* Arduino RedBoard: Where software is loaded, the point of connection for muscle sensor, and input/output creation
-* MyoWare Muscle Sensor Kit: Records eye muscle movement and creates analog input for Waker
-* EL White Light Panel: Placed inside of eye mask to light up when blinking is sensed
-* Vibromotor: Placed on separate arm band to vibrate when blinking is sensed
-* Sleep Eye Mask: Wearable component that contains light panel
-* Breadboard / Circuit Components: Controls the vibromotors and light panel using simple transistor setups
-* 5V Battery & Inverter: Powers the EL Light Panel
+* **Arduino RedBoard:** Where software is loaded, the point of connection for muscle sensor, and input/output creation
+* **MyoWare Muscle Sensor Kit:** Records eye muscle movement and creates analog input for Waker
+* **EL White Light Panel:** Placed inside of eye mask to light up when blinking is sensed
+* **Vibromotor:** Placed on separate arm band to vibrate when blinking is sensed
+* **Sleep Eye Mask:** Wearable component that houses light panel
+* **Arm band:** Wearable component that houses the vibromotor
+* **Breadboard / Circuit Components:** Controls the vibromotors and light panel using simple transistor setups
+* **5V Battery & Inverter:** Powers the EL Light Panel
 
 ## Implementation
-The major hardware components of our device are listed in the table of components above. The Arduino RedBoard serves as the central unit of the system and is programmed with a single file of code. The code contains three functions: vibrate_and_light(), setup(), and loop(). Loop() is the primary control function and runs on an infinite loop. It starts by reading samples from the ECG and records values over 30 millivolts. If three values over this threshold are recorded within three seconds, vibrate_and_light() is called. This function sets the vibromotor and light panel to HIGH. The setup() function is used to configure pins 3 and 7 to serve as an output for the vibromotor and LED panel. This function also initializes serial communication at 9600 bits per second. The vibromotor and light panel are connected wired to a breadboard with simple transistor setups. The vibromotor is connected to an arm band and the light panel is embedded in the eye mask, both worn by the user. 
+The major hardware components of our device are listed in the table of components above. The Arduino RedBoard serves as the central unit of the system and is programmed with a single file of code. The code contains three functions: vibrate_and_light(), setup(), and loop(). Loop() is the primary control function and runs on an infinite loop. It starts by reading samples from the ECG and records values over 30 millivolts. If three values over this threshold are recorded within three seconds, vibrate_and_light() is called. This function sets the vibromotor and light panel to HIGH. The setup() function is used to configure pins 3 and 7 to serve as an output for the vibromotor and LED panel. This function also initializes serial communication at 9600 bits per second. The vibromotor and light panel are wired to a breadboard with simple transistor setups. The vibromotor is connected to an arm band and the light panel is embedded in the eye mask, both worn by the user. 
 
 ## Pictures
 This is our full device, including the arm band with vibromotor and sleep mask with ECG and light panel:
