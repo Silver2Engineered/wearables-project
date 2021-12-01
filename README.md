@@ -17,8 +17,8 @@ This device would allow people with sleep paralysis to get better sleep by assur
 ## Block Diagram and Visual Summary
 A person wears the Waker device, which includes an eye mask and arm band. There is an electrode attached to their eye mask which senses blinking. When they blink three times in three seconds, the LED panel in the eye mask turns on as well as a vibromotor that is embedded in the arm band.
 
-!(images/diagram1.JPG)
-!(images/diagram2.JPG)
+![diagram1](images/diagram1.JPG)
+![diagram2](images/diagram2.JPG)
 
 ## Components
 * Arduino RedBoard: Where software is loaded, the point of connection for muscle sensor, and input/output creation
@@ -37,16 +37,16 @@ This is our full device, including the arm band with vibromotor and sleep mask w
 ![device](images/device.JPG)
 
 Close-up of arm band with vibromotor:
-!(images/armband.JPG)
+![armband](images/armband.JPG)
 
 Close-up of ECG:
-!(images/ECG.JPG)
+![ECG](images/ECG.JPG)
 
 Close-up of sleep mask with light panel:
-!(images/mask.JPG)
+![mask](images/mask.JPG)
 
 User wearing the device:
-!(images/device2.JPG)
+![device2](images/device2.JPG)
 
 
 ## Post-Mortem
